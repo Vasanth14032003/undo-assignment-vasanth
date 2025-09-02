@@ -1,0 +1,667 @@
+/* Universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    margin-bottom: 60px;
+}
+
+/* NavigationBar */
+#logo {
+    font-family: comic sans ms !important;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 0 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-left ul,
+.nav-right ul {
+    display: flex;
+    padding: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#register {
+    padding: 3px 15px;
+    background: linear-gradient(to left, rgb(231, 50, 231), indigo);
+    color: white;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#register:hover {
+    background: linear-gradient(to right, rgb(231, 50, 231), indigo);
+    transition: 1s;
+}
+
+#login:hover {
+    cursor: pointer;
+    transition: 1s;
+    box-shadow: 0 0 10px 5px lightgray;
+    padding: 3px 15px;
+    border-radius: 10px;
+}
+
+#course {
+    border-bottom: 2px solid rgb(172, 73, 243);
+}
+
+#logo:hover {
+    color: indigo;
+    transition: 1s;
+}
+
+/* Section - 1 */
+#s1 {
+    background: linear-gradient(to top right, rgb(59, 1, 59), indigo);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#s1 h1 {
+    font-size: 3rem;
+    font-family: comic sans ms !important;
+}
+
+#search-div {
+    display: inline-block;
+    margin-top: 20px;
+    width: 80%;
+    height: 4em;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+#search-bar {
+    width: 70%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+
+#search-btn {
+    margin-left: 1.2rem;
+    height: 60%;
+    border: none;
+    outline: none;
+    background: linear-gradient(to left, rgb(231, 50, 231), indigo);
+    border-radius: 25px;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+/* Section - 2 */
+#age-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+#s2 h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+#age-div {
+    margin-top: 15px 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#age-div button {
+    cursor: pointer;
+    padding: 9.5px;
+    font-size: 0.7em;
+}
+
+.age-btn1,
+.age-btn2,
+.age-btn3 {
+    border: 2px solid yellow;
+    outline: none;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.y:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.age-btn4,
+.age-btn5,
+.age-btn6 {
+    border: 2px solid orange;
+    outline: none;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.o:hover {
+    background-color: lightsalmon;
+}
+
+.age-btn7,
+.age-btn8,
+.age-btn9,
+.age-btn10,
+.age-btn11 {
+    border: 2px solid violet;
+    outline: none;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.i:hover {
+    background-color: plum;
+}
+
+.age-btn12,
+.age-btn13,
+.age-btn14,
+.age-btn15 {
+    border: 2px solid green;
+    outline: none;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.g:hover {
+    background-color: green;
+}
+
+.age-btn16,
+.age-btn17,
+.age-btn18,
+.age-btn19 {
+    border: 2px solid rgb(32, 32, 228);
+    outline: none;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.b:hover {
+    background-color: blue;
+}
+
+/* Section - 3 */
+#s3 {
+    background-color: aliceblue;
+    padding: 25px;
+}
+
+#s3 h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+/* Card Flipping */
+.courses {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2em;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 300px;
+    width: 21.5%;
+    overflow: hidden;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.child {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: absolute;
+}
+
+.front img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card-front h3 {
+    text-align: center;
+    margin: 5% 0;
+}
+
+.card-front {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-front p {
+    margin: 0px 5px;
+    margin-top: 2px;
+}
+
+.card-front h3,
+p strong {
+    color: #00796b;
+}
+
+.book-btn {
+    margin: 0px auto;
+    background-color: #00796b;
+}
+
+/* Section - 4 */
+#s4 h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+/* Section - 5 */
+#s5 h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+#teachers {
+    display: flex;
+    justify-content: space-around;
+}
+
+#s5 .teacher-card {
+    width: 18%;
+    height: 200px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px lightgray;
+}
+
+#s5 .teacher-card:active {
+    background-color: orange;
+}
+
+#s5 .teacher-card h3,
+#s5 .teacher-card p {
+    text-align: center;
+}
+
+.teacher-card h3 {
+    margin-top: 40%;
+    font-weight: bold;
+}
+
+#s5 .teacher-card img {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-radius: 50%;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid lightgray;
+}
+
+#s5 .teacher-card img:hover {
+    box-shadow: 0 0 10px 10px lightgray;
+    transition: 1s;
+}
+
+#s5 #age-text {
+    margin-bottom: 70px;
+}
+
+.course {
+    background-color: lightgray;
+    border-radius: 15px;
+    font-weight: 500;
+}
+
+#webinar p {
+    display: inline-block;
+    font-weight: bold;
+    color: rgb(12, 164, 235);
+}
+
+/* Section - 6 */
+#s6 {
+    background-color: aliceblue;
+    padding: 25px;
+}
+
+#s6 h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 30px 0;
+}
+
+/* Section - 7 */
+#s7 h1 {
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+#s7 p {
+    text-align: center;
+}
+
+#s7 .teacher-card {
+    margin: 35px 0;
+    width: 18%;
+    height: 140px;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#s7 .teacher-card img {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border-radius: 50%;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%);
+    border: 2px solid lightgray;
+}
+
+#s7 .teacher-card h3 {
+    margin-top: 70px;
+    text-align: center;
+}
+
+#s7 .teacher-card img:hover {
+    box-shadow: 0 0 10px 3px lightblue;
+    transition: 1s;
+}
+
+.c1:hover,
+.c4:hover {
+    transform: scale(1.2);
+    background-color: cyan;
+    box-shadow: 0 0 10px 10px lightgray;
+}
+
+.c2:hover {
+    transform: scale(1.2);
+    background-color: yellowgreen;
+    box-shadow: 0 0 10px 10px lightgray;
+}
+
+.c3:hover {
+    transform: scale(1.2);
+    background-color: pink;
+    box-shadow: 0 0 10px 10px lightgray;
+}
+
+.c5:hover {
+    transform: scale(1.2);
+    background-color: blue;
+    box-shadow: 0 0 10px 10px lightgray;
+}
+
+/* Section - 8 */
+#s8 {
+    background-color: aliceblue;
+}
+
+#s8 h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 30px 0;
+}
+
+#timing {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tim {
+    width: 22%;
+}
+
+#morning {
+    border: 1px solid cyan;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#morning:hover {
+    background-color: lightblue;
+}
+
+#noon {
+    border: 1px solid yellow;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#noon:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+#evening {
+    border: 1px solid orangered;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#evening:hover {
+    background-color: lightsalmon;
+}
+
+#night {
+    border: 1px solid purple;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+#night:hover {
+    background-color: plum;
+}
+
+#fin-cards {
+    display: flex;
+    padding: 50px 0;
+    justify-content: space-around;
+}
+
+.fin1 {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border: 1px solid lightblue;
+    border-radius: 15px;
+    box-shadow: 0 0 10px 5px lightgray;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.f1:hover {
+    background-color: lightgreen;
+}
+
+.f2:hover {
+    background-color: cyan;
+}
+
+.f3:hover {
+    background-color: yellow;
+}
+
+.card-image {
+    width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* -------------------- Responsive -------------------- */
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+    .nav-left ul,
+    .nav-right ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav li {
+        padding: 10px 0;
+    }
+    .container {
+        width: 45%;
+        margin-bottom: 15px;
+    }
+    #teachers {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    #s5 .teacher-card {
+        width: 40%;
+    }
+    #fin-cards {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .fin1 {
+        width: 90%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    #s1 h1 {
+        font-size: 1.8rem;
+        padding: 0 10px;
+    }
+    #search-div {
+        width: 95%;
+        height: 3em;
+    }
+    #search-bar {
+        font-size: 1rem;
+    }
+    #search-btn {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+    .container {
+        width: 100%;
+        height: auto;
+        margin-top: 18px;
+        border-radius: 15px;
+    }
+    .card-front h3 {
+        font-size: 1rem;
+    }
+    .card-front p {
+        font-size: 0.9rem;
+    }
+    #age-div {
+        display: inline-block;
+    }
+    #fin-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    #s5 .teacher-card,
+    #s7 .teacher-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    h1,
+    p {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .container {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 18px;
+        border-radius: 15px;
+    }
+}
